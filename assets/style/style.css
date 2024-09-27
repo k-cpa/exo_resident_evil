@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+/********** GENERAL *************/
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/********** Partie HEADER/FOOTER *************/
+nav {
+    padding: 35px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav a {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid black;
+    color: black;
+    font-weight: 500;
+}
+
+nav a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+li:last-child a{
+    border-right: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+footer img {
+    width: 100px;
+    height: 30px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem
+}
+
+footer a {
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 1px solid white;
+    color: white;
+    font-size: small;
+}
+
+/********** Image de fond et titre de la page **********/
+.title_banner {
+    background-image: url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 4rem;
+    height: 30rem;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.title_banner img {
+    width: 55%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title_banner h1 {
+    font-size: 2.5vw;
+    color: white;
+    text-align: center;
+}
+
+/********** Partie MAIN **********/
+
+.core {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.first_core {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 3rem;
+}
+
+.first_core h1 {
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+
+.first core p {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.first_core a {
+    align-self: center;
+    background-color: rgb(206, 4, 4);
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: white;
+    margin-top: 30px;
+    position: relative;
+}
+
+.first_core a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.first_core a:hover::before {
+    opacity: 1; 
+}
+
+.second_core {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_core h2 {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+}
+
+.container_cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(35, 35, 35);
+    width: 400px;
+    height: 550px;
+}
+
+article img  {
+    height: 40%;
+    width: 100%;
+    margin-bottom: 0;
+    object-fit: cover;
+}
+
+article h1 {
+    font-weight: bold;
+}
+
+article h1, article p {
+    margin: 2rem 2rem 2rem 1rem;
+    color: white;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.third_core {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(38, 38, 38);
+    width: 100%;
+}
+
+.third_core h2 {
+    color: white;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    padding-bottom: 3rem;
+}
+form input {
+    height: 45px;
+    width: 260px;
+    border-radius: 5px;
+    border: none;
+}
+
+#btn_subscribe {
+    border: none;
+    align-self: center;
+    background-color: rgb(206, 4, 4);
+    height: 45px;
+    width: 130px;
+    border-radius: 5px;
+    color: white;
+    margin-left: 15px;
+    position: relative;
+}
+#btn_subscribe::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#btn_subscribe:hover::before {
+    opacity: 1; 
+}
+
+/*************** RESPONSIVE ***************/
+
+
+
+@media screen and (max-width:1897px) {
+
+    .title_banner img {
+        text-align: center;
+    }
+} 
+@media screen and (max-width:1830px) {
+    .title_banner {
+        height: 20rem;
+    }
+
+}
+@media screen and (max-width:1440px) {
+    .title_banner {
+        height: 15rem;
+    }
+
+}
+
+@media screen and (max-width:1090px) {
+    .title_banner {
+        height: 10rem;
+    }
+}
+    
+@media screen and (max-width:995px) {
+    .title_banner {
+        height: 5rem;
+    }
+
+    .title h1 {
+        display: none;
+    }
+
+    nav {
+        padding: 17px;
+    }
+    
+    .first_core {
+        margin: 0.5rem;
+    }
+
+    .container_cards {
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .third_core h2 {
+        margin-top: 1.5rem;
+    }
+
+    form {
+        padding-bottom: 1.5rem;
+    }
+
+    form input {
+        height: 25px;
+        width: 200px;
+    }
+
+    #btn_subscribe {
+        height: 25px;
+        width: 100px;
+    }
+
+    footer {
+        justify-content: center;
+    }
+
+    footer img {
+        display: none;
+    }
+
+    footer a {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+
+
+
