@@ -334,6 +334,14 @@ form input {
 
 }
 
+@media screen and (max-width:760px) {
+    footer a {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-right: none;
+    }
+}
+
 
 
 
