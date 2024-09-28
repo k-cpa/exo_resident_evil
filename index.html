@@ -21,14 +21,15 @@
             </ul>
         </nav>
     </header>
-<!-- Insérer l'image du jeu en fond de la div -->
     <main>
+<!-------------------- Partie titre avec image de fond -------------------->
         <section class="title_banner">
             <div class="title">
                 <img src="assets/img/Resident_Evil_4_Logo_Light_Outlined.png" alt="Le personnage Leon S. Kennedy avec en arrière plan une scène d'horreur sombre">
                 <h1>REDÉCOUVREZ UN CLASSIQUE</h1>
             </div>
         </section>
+<!-------------------- Partie principale -------------------->
         <section class="core">
             <div class="first_core">
                 <h1>SURVIVEZ. COMBATTEZ. DÉCOUVREZ</h1>
@@ -38,10 +39,9 @@
                     époustouflants tout en résolvant des énigmes et en affrontant les ennemis impitoyables.</p>
                     <a class="btn" href="">En savoir +</a>    
             </div>
+<!-------------------- Vignettes (Possiblement pas optimal voir correction exo destination ce WE)  -------------------->
             <div class="second_core">
                 <h2>ACTUALITÉS</h2>
-<!-- Revoir l'exercice d'hier pour la mise en place des cards
-Penser au fait qu'on peut mettre en position relative absolute l'intérieur -->
                     <div class="container_cards"> 
                         <article class="monsters">
                             <img src="assets/img/new-monsters.jpg" alt="">
@@ -60,10 +60,12 @@ Penser au fait qu'on peut mettre en position relative absolute l'intérieur -->
                         </article>
                     </div> 
             </div>
+<!-------------------- Pré footer avec formulaire abonnement -------------------->
             <div class="third_core">
             <h2>ABONNEZ-VOUS A NOTRE NEWSLETTER</h2>
-<!-- Form est peut être pas optimal à voir dans réflexion -->
             <form>
+                <!-- Ici j'ai mon navigateur qui propose de saisir un numéro téléphone
+                 Malgré le fait que j'ai bien un "autocomplete="email" ... Penser à demander pourquoi lundi -->
                 <input type="email" id="email" name="email" autocomplete="email" placeholder="Votre adresse mail">
                 <button id="btn_subscribe">S'abonner</button>
             </form>

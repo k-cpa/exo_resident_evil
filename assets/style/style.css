@@ -73,7 +73,6 @@ footer a {
 .title_banner {
     background-image: url("../img/banner.jpg");
     background-size: cover;
-    background-position: center;
     padding: 4rem;
     height: 30rem;
 }
@@ -252,37 +251,19 @@ form input {
 
 /*************** RESPONSIVE ***************/
 
-
-
-@media screen and (max-width:1897px) {
-
-    .title_banner img {
-        text-align: center;
-    }
-} 
-@media screen and (max-width:1830px) {
-    .title_banner {
-        height: 20rem;
+@media screen and (max-width:1260px) {
+    .container_cards {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
     }
 
-}
-@media screen and (max-width:1440px) {
-    .title_banner {
-        height: 15rem;
-    }
-
-}
-
-@media screen and (max-width:1090px) {
-    .title_banner {
-        height: 10rem;
+    .first_core {
+        margin: 0.5rem;
     }
 }
-    
+
 @media screen and (max-width:995px) {
-    .title_banner {
-        height: 5rem;
-    }
 
     .title h1 {
         display: none;
@@ -290,15 +271,22 @@ form input {
 
     nav {
         padding: 17px;
+        font-size: 200;
     }
     
     .first_core {
         margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .second_core h2 {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
     }
 
     .container_cards {
         flex-direction: column;
-        margin-bottom: 2rem;
+        gap: 15px;
     }
 
     .third_core h2 {
@@ -340,6 +328,36 @@ form input {
         padding-right: 5px;
         border-right: none;
     }
+
+    .container_cards {
+        margin-bottom: 1.5rem;
+    }
+
+    .third_core h2 {
+        margin-top: 1rem;
+    }
+
+    .first_core h1 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .first core p {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .first_core a {
+        margin-top: 20px;
+    }
+    
+
+    .third_core h2 {
+        color: white;
+        margin-top: 2rem;
+        margin-bottom: 20px;
+    }
+
 }
 
 
