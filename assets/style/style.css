@@ -74,6 +74,7 @@ footer a {
     background-image: url("../img/banner.jpg");
     background-size: cover;
     padding: 4rem;
+    margin: 0;
     height: 30rem;
 }
 
@@ -86,13 +87,13 @@ footer a {
 }
 
 .title_banner img {
-    width: 55%;
+    width: 55vw;
     height: auto;
     object-fit: cover;
 }
 
 .title_banner h1 {
-    font-size: 2.5vw;
+    font-size: 3vw;
     color: white;
     text-align: center;
 }
@@ -104,6 +105,7 @@ footer a {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100vw;
 }
 
 .first_core {
@@ -265,8 +267,21 @@ form input {
 
 @media screen and (max-width:995px) {
 
+    .title_banner {
+        height: 20rem;
+    }
+
+    .title img {
+        width: 60vw;
+        align-self: center;
+    }
+
     .title h1 {
         display: none;
+    }
+
+    .first_core {
+        width: 80%;
     }
 
     nav {
@@ -322,7 +337,20 @@ form input {
 
 }
 
-@media screen and (max-width:760px) {
+@media screen and (max-width:768px) {
+
+    .title_banner {
+        height: 10rem;
+    }
+
+    .title_banner img {
+        width: 50vw;
+    }
+
+    .first_core {
+        width: 100%;
+    }
+
     footer a {
         padding-left: 5px;
         padding-right: 5px;
